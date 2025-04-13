@@ -7,8 +7,8 @@ services:
     startCommand: node index.js
     envVars:
       - key: OPENAI_API_KEY
-        value: your_openai_api_key
+        value: @dmin1@3
       - key: MONGO_URI
-        value: your_mongodb_connection_string
+        value: healthmate
       - key: PORT
         value: 5000
