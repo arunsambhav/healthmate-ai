@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: healthmate-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: OPENAI_API_KEY
+        value: your_openai_api_key
+      - key: MONGO_URI
+        value: your_mongodb_connection_string
+      - key: PORT
+        value: 5000
